@@ -132,77 +132,34 @@ h3 { font-size: 1.1rem; font-weight: 650; }
 .hero-stats b { display: block; font-size: 1.5rem; font-weight: 800; }
 .hero-stats span { font-size: .85rem; color: var(--muted); }
 
-/* ===== Ілюстрація в hero (аніме-стиль) ===== */
+/* ===== Ілюстрація в hero (монохромний аніме-скетч) ===== */
 .hero-art {
-  --art-bg: #eef3ff; --art-blob: #dbe6ff; --art-ring: #93b4f5;
-  --art-chair: #c7d2fe; --art-desk: #ffffff; --art-desk-leg: #94a3b8; --art-floor: #c7d2fe;
   max-width: 440px; width: 100%; margin-left: auto;
   border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-}
-:root[data-theme="dark"] .hero-art {
-  --art-bg: #0f1a30; --art-blob: #1a2d52; --art-ring: #2c4a85;
-  --art-chair: #24375e; --art-desk: #cbd5e1; --art-desk-leg: #475569; --art-floor: #24375e;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .hero-art {
-    --art-bg: #0f1a30; --art-blob: #1a2d52; --art-ring: #2c4a85;
-    --art-chair: #24375e; --art-desk: #cbd5e1; --art-desk-leg: #475569; --art-floor: #24375e;
-  }
+  border: 1px solid var(--border); background: #0d0d0f;
 }
 .hero-art svg { display: block; width: 100%; height: auto; }
-.hero-art .a-bg { fill: var(--art-bg); }
-.hero-art .a-blob { fill: var(--art-blob); }
-.hero-art .a-ring { stroke: var(--art-ring); }
-.hero-art .a-chair { fill: var(--art-chair); stroke: #0f172a; stroke-width: 2.5; }
-.hero-art .a-desk { fill: var(--art-desk); }
-.hero-art .a-desk-leg { stroke: var(--art-desk-leg); }
-.hero-art .a-floor { stroke: var(--art-floor); }
+
+/* Легке дихання */
+.art-figure { animation: breathe 5s ease-in-out infinite; }
+@keyframes breathe { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1.5px); } }
 
 /* Кліпає очима */
-.art-eye { transform-box: fill-box; transform-origin: center; animation: blink 4.6s infinite; }
-@keyframes blink { 0%, 93%, 100% { transform: scaleY(1); } 95.5% { transform: scaleY(.1); } }
+.art-eye { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
+@keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
 
 /* Відблиск на окулярах */
-.art-glare { animation: glare 6s ease-in-out infinite; }
-@keyframes glare { 0%, 70%, 100% { opacity: .25; } 80% { opacity: .95; } }
+.art-glint { animation: glint 6s ease-in-out infinite; }
+@keyframes glint { 0%, 70%, 100% { opacity: 0; } 78% { opacity: 1; } 86% { opacity: 0; } }
 
-/* Іноді задумливо нахиляє голову */
-.art-head { transform-box: view-box; transform-origin: 200px 196px; animation: think 9s ease-in-out infinite; }
-@keyframes think { 0%, 62%, 100% { transform: rotate(0deg); } 68%, 84% { transform: rotate(-4deg); } }
-
-/* Друкує */
-.art-arms { animation: type 3.2s infinite; }
-@keyframes type {
-  0%, 100% { transform: translateY(0); }
-  5% { transform: translateY(1.5px); } 10% { transform: translateY(0); }
-  15% { transform: translateY(1.5px); } 20% { transform: translateY(0); }
-  25% { transform: translateY(1.5px); } 30% { transform: translateY(0); }
-  40% { transform: translateY(1.5px); } 45% { transform: translateY(0); }
-}
-
-/* Нога час від часу чухає іншу ногу */
-.art-leg { transform-box: view-box; transform-origin: 221px 276px; animation: scratch 8s ease-in-out infinite; }
-@keyframes scratch {
-  0%, 58%   { transform: rotate(0deg); }
-  62%       { transform: rotate(16deg); }
-  65%       { transform: rotate(11deg); }
-  68%       { transform: rotate(17deg); }
-  71%       { transform: rotate(11deg); }
-  74%       { transform: rotate(17deg); }
-  77%       { transform: rotate(11deg); }
-  82%, 100% { transform: rotate(0deg); }
-}
-
-/* Пара, світіння екрана, зірочки */
-.art-steam { animation: steam 2.4s ease-in-out infinite; }
-@keyframes steam { 0%, 100% { opacity: .2; transform: translateY(2px); } 50% { opacity: .8; transform: translateY(-3px); } }
-.art-screen { animation: screen 3s ease-in-out infinite; }
-@keyframes screen { 0%, 100% { opacity: .14; } 50% { opacity: .24; } }
-.art-spark path { transform-box: fill-box; transform-origin: center; animation: twinkle 3s ease-in-out infinite; }
-.art-spark .s2 { animation-delay: 1s; }
-.art-spark .s3 { animation-delay: 2s; }
-@keyframes twinkle { 0%, 100% { opacity: .3; transform: scale(.7); } 50% { opacity: 1; transform: scale(1); } }
+/* Вогні міста мерехтять, туман пливе */
+.art-lights { animation: lights 3.5s ease-in-out infinite; }
+.art-lights.l2 { animation-duration: 5s; animation-delay: 1.2s; }
+@keyframes lights { 0%, 100% { opacity: .85; } 50% { opacity: .35; } }
+.art-fog { animation: fog 14s ease-in-out infinite alternate; }
+.art-fog.f2 { animation-duration: 18s; animation-direction: alternate-reverse; }
+@keyframes fog { from { transform: translateX(-30px); } to { transform: translateX(40px); } }
+.art-water { animation: lights 4s ease-in-out infinite; }
 
 /* ===== Картки ===== */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
