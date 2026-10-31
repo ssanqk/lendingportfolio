@@ -14,7 +14,6 @@ assets/img/           — сюди класти скріншоти робіт
 
 ## Що поміняти в першу чергу
 
-- `https://t.me/your_username` → свій Telegram (index.html і sites.html)
 - Цифри в hero (`15+`, `10+`) — під реальні
 - Сценарій демо-чату — масив `SCRIPT` у `assets/js/main.js`
 - Акцентний колір — `--accent` у `style.css`
