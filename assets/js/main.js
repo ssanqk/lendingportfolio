@@ -20,6 +20,17 @@ if (themeBtn) {
   });
 }
 
+// Перемикач «Комп'ютер / Телефон» у демо сайтів
+document.querySelectorAll('.demo-view').forEach(view => {
+  const frame = view.querySelector('.browser-frame');
+  view.querySelectorAll('.device-switch button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      view.querySelectorAll('.device-switch button').forEach(b => b.classList.toggle('on', b === btn));
+      frame.dataset.device = btn.dataset.device;
+    });
+  });
+});
+
 // Рік у футері
 document.querySelectorAll('[data-year]').forEach(el => (el.textContent = new Date().getFullYear()));
 

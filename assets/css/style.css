@@ -292,6 +292,58 @@ footer { padding: 32px 0; color: var(--muted); font-size: .88rem; border-top: 1p
 .includes .card { padding: 20px; }
 .includes h3 { font-size: 1rem; }
 
+/* ===== Демо сайту з вбудованим вікном ===== */
+.demo {
+  display: grid; grid-template-columns: 340px 1fr; gap: 40px; align-items: start;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px;
+}
+.demo-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.demo-lead { color: var(--muted); margin: 12px 0 22px; }
+.demo-info h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin-bottom: 10px; }
+.demo-list { list-style: none; display: grid; gap: 8px; margin-bottom: 22px; }
+.demo-list li { font-size: .93rem; padding-left: 22px; position: relative; }
+.demo-list li::before { content: "✓"; position: absolute; left: 0; color: var(--ok); font-weight: 700; }
+.demo-note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
+.demo-note.center { text-align: center; }
+.demo-note a { color: var(--accent); font-weight: 600; }
+.demo-note a:hover { text-decoration: underline; }
+
+.demo-view { min-width: 0; }
+.device-switch {
+  display: inline-flex; padding: 4px; gap: 4px; margin-bottom: 14px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
+}
+.device-switch button {
+  font: inherit; font-size: .85rem; font-weight: 600; padding: 6px 14px; border-radius: 7px;
+  border: 0; background: transparent; color: var(--muted); cursor: pointer;
+}
+.device-switch button.on { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+
+.browser-frame {
+  border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--surface-2);
+  box-shadow: var(--shadow); margin: 0 auto; width: 100%; transition: max-width .35s ease;
+}
+.browser-frame[data-device="mobile"] { max-width: 390px; border-radius: 28px; }
+.browser-frame .browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 12px; }
+.browser-frame .browser-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
+.browser-frame .url {
+  flex: 1; margin-left: 8px; height: 24px; border-radius: 7px; background: var(--surface);
+  font-size: .78rem; color: var(--muted); display: flex; align-items: center; padding: 0 10px;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.browser-frame .url:hover { color: var(--accent); }
+.browser-frame iframe { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
+.browser-frame[data-device="mobile"] iframe { height: 720px; }
+
+@media (max-width: 960px) {
+  .demo { grid-template-columns: 1fr; padding: 24px; gap: 28px; }
+}
+@media (max-width: 720px) {
+  .demo { padding: 20px; }
+  .device-switch { display: none; }
+  .browser-frame iframe { height: 620px; }
+}
+
 /* ===== Поява при скролі ===== */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s, transform .6s; }
 .reveal.in { opacity: 1; transform: none; }
