@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ssanqk — AI-агенти, інтеграції API, сайти</title>
+  <meta name="description" content="Роблю AI-агентів, Telegram-ботів, інтеграції API та сайти для малого бізнесу.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== НАВІГАЦІЯ ===== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">ssanqk<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Послуги</a></li>
+      <li><a href="#agents">AI-агенти</a></li>
+      <li><a href="#api">Інтеграції API</a></li>
+      <li><a href="sites.html">Сайти</a></li>
+      <li><a href="#contact">Контакти</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Обговорити проєкт</a>
+    <button class="burger" aria-label="Меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Автоматизація для бізнесу</span>
+        <h1>Роблю <span class="hl">AI-агентів</span>, ботів і сайти, які працюють замість вас</h1>
+        <p class="lead">Чат-менеджери, що приймають заявки 24/7, інтеграції з біржами, банками й таблицями, та швидкі сайти для малого бізнесу.</p>
+        <div class="hero-actions">
+          <a href="#agents" class="btn btn-primary">Подивитись роботи</a>
+          <a href="#contact" class="btn btn-ghost">Написати мені</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>15+</b><span>ботів і агентів</span></div>
+          <div><b>10+</b><span>інтеграцій API</span></div>
+          <div><b>24/7</b><span>робота без вихідних</span></div>
+        </div>
+      </div>
+
+      <!-- Живе демо агента (сценарій — у assets/js/main.js) -->
+      <div class="chat" aria-label="Демо роботи AI-агента">
+        <div class="chat-head">
+          <div class="chat-avatar">AI</div>
+          <div><b>Агент стоматології</b><small>● онлайн</small></div>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПОСЛУГИ ===== -->
+  <section id="services" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Що я роблю</span>
+        <h2>Три напрями, з якими можу допомогти</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
+          <h3>AI-агенти та чат-менеджери</h3>
+          <p>Бот у Telegram відповідає клієнтам, консультує, записує на послугу і передає заявку вам.</p>
+          <a href="#agents" class="card-link">Приклади →</a>
+        </div>
+        <div class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></div>
+          <h3>Інтеграції API та парсери</h3>
+          <p>Зв'язую сервіси між собою: біржі, банки, таблиці, маркетплейси — з сигналами в Telegram.</p>
+          <a href="#api" class="card-link">Приклади →</a>
+        </div>
+        <div class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div>
+          <h3>Сайти та лендінги</h3>
+          <p>Швидкі сайти-візитки, лендінги й дашборди. Адаптив під телефон і запуск на домені.</p>
+          <a href="sites.html" class="card-link">Сторінка сайтів →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI-АГЕНТИ ===== -->
+  <section id="agents">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">AI-агенти</span>
+        <h2>Агенти, які спілкуються з клієнтами</h2>
+        <p>Розуміють звичайну мову, а не лише кнопки. Збирають дані, записують і сповіщають власника.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card project reveal">
+          <div class="project-top"><h3>Save Tooth</h3><span class="badge">Стоматологія</span></div>
+          <p>Агент приймає звернення пацієнтів і записує їх на прийом.</p>
+          <ul>
+            <li>Консультує по послугах і цінах</li>
+            <li>Заявки одразу в Google Sheets</li>
+            <li>Сповіщення адміну в Telegram</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span><span class="tag">Google Sheets</span></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-top"><h3>Флористка</h3><span class="badge">Квітковий магазин</span></div>
+          <p>Чат-менеджер, що допомагає підібрати букет і оформити замовлення.</p>
+          <ul>
+            <li>Підбір букета під привід і бюджет</li>
+            <li>Збирає адресу і час доставки</li>
+            <li>Передає готове замовлення флористу</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-top"><h3>НутріБот</h3><span class="badge">Здоров'я</span></div>
+          <p>Персональний агент з харчування з планом на день і тиждень.</p>
+          <ul>
+            <li>Опитування і розрахунок калорій</li>
+            <li>План їжі та список продуктів</li>
+            <li>Щоденні нагадування</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span><span class="tag">Планувальник</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ІНТЕГРАЦІЇ API ===== -->
+  <section id="api" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Інтеграції API</span>
+        <h2>Дані з одного сервісу — дія в іншому</h2>
+        <p>Скрипт стежить за потрібним джерелом і реагує сам: надсилає сигнал, записує в таблицю або виконує дію.</p>
+      </div>
+
+      <!-- Схема як це працює -->
+      <div class="flow reveal">
+        <div class="flow-node">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <b>Джерело</b><small>біржа, банк, сайт</small>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-node">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div>
+          <b>Скрипт</b><small>Python, 24/7 на сервері</small>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-node">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <b>Логіка</b><small>фільтри, AI-аналіз</small>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-node">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></div>
+          <b>Результат</b><small>Telegram, таблиця, дія</small>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <article class="card project reveal">
+          <div class="project-top"><h3>Оплата підписки через Monobank</h3><span class="badge">Платежі</span></div>
+          <p>Бот приймає оплату за доступ до приватного чату і сам видає доступ.</p>
+          <ul><li>Тарифи і промокоди</li><li>Перевірка оплати на банку</li><li>Адмін-панель у Telegram</li></ul>
+          <div class="tags"><span class="tag">Monobank API</span><span class="tag">Telegram</span></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-top"><h3>Спред-монітор бірж</h3><span class="badge">Крипто</span></div>
+          <p>Порівнює ціни між біржами і сигналить, коли розрив перевищує поріг.</p>
+          <ul><li>BingX, Binance, Bybit</li><li>Сигнали в Telegram за секунди</li><li>Лог усіх подій у CSV</li></ul>
+          <div class="tags"><span class="tag">REST / WebSocket</span><span class="tag">Python</span></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-top"><h3>Моніторинг цін у магазинах</h3><span class="badge">Парсинг</span></div>
+          <p>Стежить за цінами на товари в кількох магазинах і повідомляє про знижки.</p>
+          <ul><li>Зіставлення однакових моделей</li><li>Історія цін у таблиці</li><li>Сповіщення про падіння ціни</li></ul>
+          <div class="tags"><span class="tag">Парсер</span><span class="tag">Telegram</span><span class="tag">CSV</span></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-top"><h3>Моніторинг сервера</h3><span class="badge">DevOps</span></div>
+          <p>Бот стежить за станом сервера і скриптів, перезапускає їх при збоях.</p>
+          <ul><li>Стан, пам'ять, місце на диску</li><li>Перезапуск з кнопки</li><li>Щоденний звіт</li></ul>
+          <div class="tags"><span class="tag">Linux</span><span class="tag">Telegram</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ЯК Я ПРАЦЮЮ ===== -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Процес</span>
+        <h2>Як проходить робота</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Задача</h3><p>Обговорюємо, що треба автоматизувати і який результат потрібен.</p></div>
+        <div class="step reveal"><h3>Прототип</h3><p>Показую робочу тестову версію за кілька днів.</p></div>
+        <div class="step reveal"><h3>Доробка</h3><p>Налаштовуємо під ваш бізнес, тексти і процеси.</p></div>
+        <div class="step reveal"><h3>Запуск</h3><p>Ставлю на сервер, слідкую за роботою і підтримую.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== КОНТАКТИ ===== -->
+  <section id="contact" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Є задача? Давайте обговоримо</h2>
+          <p>Напишіть, що хочете автоматизувати — підкажу рішення і терміни.</p>
+        </div>
+        <div class="cta-links">
+          <!-- TODO: заміни на свій Telegram -->
+          <a href="https://t.me/your_username" class="btn" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/ssanqk" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span data-year></span> ssanqk</span>
+    <span>AI-агенти · Інтеграції API · Сайти</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

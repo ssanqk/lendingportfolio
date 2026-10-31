@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сайти — ssanqk</title>
+  <meta name="description" content="Сайти, лендінги та дашборди: приклади робіт.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">ssanqk<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Послуги</a></li>
+      <li><a href="index.html#agents">AI-агенти</a></li>
+      <li><a href="index.html#api">Інтеграції API</a></li>
+      <li><a href="sites.html" class="active">Сайти</a></li>
+      <li><a href="#contact">Контакти</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Замовити сайт</a>
+    <button class="burger" aria-label="Меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Сайти</span>
+      <h1>Сайти, лендінги та дашборди</h1>
+      <p class="lead">Від сайту-візитки для кав'ярні до особистого кабінету з графіками. Швидко, адаптивно, з запуском на домені.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 24px;">
+    <div class="container">
+      <div class="filter">
+        <button class="on" data-cat="all">Усі</button>
+        <button data-cat="business">Для бізнесу</button>
+        <button data-cat="dashboard">Дашборди</button>
+        <button data-cat="tool">Інструменти</button>
+      </div>
+
+      <!--
+        Як додати реальний скріншот: поклади картинку в assets/img/
+        і заміни <div class="mock ...">...</div> на <img src="assets/img/назва.png" alt="...">
+      -->
+      <div class="grid-3">
+        <article class="card site-card reveal" data-cat-item="business">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">vesela-pekarnia</span></div>
+            <div class="preview"><div class="mock mock-warm"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Весела пекарня</h3>
+            <p>Сайт пекарні: меню, відгуки, карта «де нас знайти».</p>
+            <div class="tags"><span class="tag">Лендінг</span><span class="tag">Адаптив</span></div>
+            <div class="actions"><a href="#" class="card-link">Демо →</a></div>
+          </div>
+        </article>
+
+        <article class="card site-card reveal" data-cat-item="dashboard">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">buhgalter</span></div>
+            <div class="preview"><div class="mock mock-green"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Бухгалтер</h3>
+            <p>Облік доходів і витрат: залишок, курси валют, цілі накопичень.</p>
+            <div class="tags"><span class="tag">Дашборд</span><span class="tag">Графіки</span></div>
+            <div class="actions"><a href="#" class="card-link">Демо →</a></div>
+          </div>
+        </article>
+
+        <article class="card site-card reveal" data-cat-item="dashboard">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">life-compass</span></div>
+            <div class="preview"><div class="mock mock-violet"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Життєвий компас</h3>
+            <p>Особистий дашборд: цілі, план, нотатки та щоденник.</p>
+            <div class="tags"><span class="tag">Дашборд</span><span class="tag">Планування</span></div>
+            <div class="actions"><a href="#" class="card-link">Демо →</a></div>
+          </div>
+        </article>
+
+        <article class="card site-card reveal" data-cat-item="tool">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">paper-futures</span></div>
+            <div class="preview"><div class="mock mock-dark"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Тестер стратегій</h3>
+            <p>Паперова торгівля ф'ючерсами з живими цінами і статистикою угод.</p>
+            <div class="tags"><span class="tag">Інструмент</span><span class="tag">API біржі</span></div>
+            <div class="actions"><a href="#" class="card-link">Демо →</a></div>
+          </div>
+        </article>
+
+        <article class="card site-card reveal" data-cat-item="tool">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">ideas-box</span></div>
+            <div class="preview"><div class="mock mock-blue"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Скринька ідей</h3>
+            <p>Записник ідей з нотатками, зручний на телефоні.</p>
+            <div class="tags"><span class="tag">Інструмент</span><span class="tag">Mobile-first</span></div>
+            <div class="actions"><a href="#" class="card-link">Демо →</a></div>
+          </div>
+        </article>
+
+        <article class="card site-card reveal" data-cat-item="business">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">your-business</span></div>
+            <div class="preview"><div class="mock mock-slate"><div class="m-nav"></div><div class="m-title"></div><div class="m-text"></div><div class="m-row"><div class="m-box"></div><div class="m-box"></div></div></div></div>
+          </div>
+          <div class="site-info">
+            <h3>Ваш сайт тут</h3>
+            <p>Сайт-візитка або лендінг під ваш бізнес — від ідеї до домену.</p>
+            <div class="tags"><span class="tag">Під ключ</span></div>
+            <div class="actions"><a href="#contact" class="card-link">Обговорити →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Що входить</span>
+        <h2>Кожен сайт отримує</h2>
+      </div>
+      <div class="includes">
+        <div class="card reveal"><h3>Адаптив</h3><p>Однаково зручно на телефоні й комп'ютері.</p></div>
+        <div class="card reveal"><h3>Швидкість</h3><p>Легкий код без зайвого — відкривається миттєво.</p></div>
+        <div class="card reveal"><h3>Домен і хостинг</h3><p>Запуск на вашому домені, налаштування під ключ.</p></div>
+        <div class="card reveal"><h3>Інтеграції</h3><p>Форми в Telegram, таблиці, оплата, бот-асистент.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Потрібен сайт?</h2>
+          <p>Опишіть ідею в кількох словах — запропоную структуру і терміни.</p>
+        </div>
+        <div class="cta-links">
+          <!-- TODO: заміни на свій Telegram -->
+          <a href="https://t.me/your_username" class="btn" target="_blank" rel="noopener">Telegram</a>
+          <a href="index.html" class="btn btn-outline">На головну</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span data-year></span> ssanqk</span>
+    <span>AI-агенти · Інтеграції API · Сайти</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
