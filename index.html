@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ssanqk — AI-агенти, інтеграції API, сайти</title>
+  <title>Михайло — AI-агенти, інтеграції API, сайти</title>
   <meta name="description" content="Роблю AI-агентів, Telegram-ботів, інтеграції API та сайти для малого бізнесу.">
+  <!-- Тема ставиться до завантаження стилів, щоб не було блимання -->
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,18 +17,24 @@
 <!-- ===== НАВІГАЦІЯ ===== -->
 <header class="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="logo">ssanqk<span>.</span></a>
+    <a href="index.html" class="logo">Михайло<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#services">Послуги</a></li>
+      <li><a href="#why">Чому я</a></li>
       <li><a href="#agents">AI-агенти</a></li>
       <li><a href="#api">Інтеграції API</a></li>
       <li><a href="sites.html">Сайти</a></li>
-      <li><a href="#contact">Контакти</a></li>
     </ul>
-    <a href="#contact" class="btn btn-primary nav-cta">Обговорити проєкт</a>
-    <button class="burger" aria-label="Меню">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Перемкнути тему" title="Світла / темна тема">
+        <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="https://t.me/difuene" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Обговорити проєкт</a>
+      <button class="burger" aria-label="Меню">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -39,13 +47,8 @@
         <h1>Роблю <span class="hl">AI-агентів</span>, ботів і сайти, які працюють замість вас</h1>
         <p class="lead">Чат-менеджери, що приймають заявки 24/7, інтеграції з біржами, банками й таблицями, та швидкі сайти для малого бізнесу.</p>
         <div class="hero-actions">
-          <a href="#agents" class="btn btn-primary">Подивитись роботи</a>
-          <a href="#contact" class="btn btn-ghost">Написати мені</a>
-        </div>
-        <div class="hero-stats">
-          <div><b>15+</b><span>ботів і агентів</span></div>
-          <div><b>10+</b><span>інтеграцій API</span></div>
-          <div><b>24/7</b><span>робота без вихідних</span></div>
+          <a href="#services" class="btn btn-primary">Що я роблю</a>
+          <a href="https://t.me/difuene" class="btn btn-ghost" target="_blank" rel="noopener">Написати в Telegram</a>
         </div>
       </div>
 
@@ -72,13 +75,13 @@
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
           <h3>AI-агенти та чат-менеджери</h3>
           <p>Бот у Telegram відповідає клієнтам, консультує, записує на послугу і передає заявку вам.</p>
-          <a href="#agents" class="card-link">Приклади →</a>
+          <a href="#agents" class="card-link">Детальніше →</a>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></div>
           <h3>Інтеграції API та парсери</h3>
           <p>Зв'язую сервіси між собою: біржі, банки, таблиці, маркетплейси — з сигналами в Telegram.</p>
-          <a href="#api" class="card-link">Приклади →</a>
+          <a href="#api" class="card-link">Детальніше →</a>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div>
@@ -90,8 +93,48 @@
     </div>
   </section>
 
+  <!-- ===== ЧОМУ САМЕ Я ===== -->
+  <section id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Чому саме я</span>
+        <h2>Що ви отримуєте, працюючи зі мною</h2>
+      </div>
+      <div class="why-grid">
+        <div class="card why-stat reveal">
+          <b>20+</b><span>проєктів</span>
+          <p>Telegram-боти, AI-агенти, парсери й сайти — від ідеї до запуску</p>
+        </div>
+        <div class="card why-stat reveal">
+          <b>1+</b><span>рік досвіду</span>
+          <p>Досвід у розробці, автоматизації та інтеграціях API для бізнесу</p>
+        </div>
+        <div class="card why-item reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
+          <h3>AI-агенти</h3>
+          <p>Чат-менеджери для бізнесу: приймають заявки, відповідають клієнтам, пишуть у Google Sheets</p>
+        </div>
+        <div class="card why-item reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+          <h3>Web3 і трейдинг</h3>
+          <p>Боти для бірж, моніторинг гаманців, спред-парсери, сигнали в Telegram</p>
+        </div>
+        <div class="card why-item reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Підтримка</h3>
+          <p>Постійна підтримка після запуску продукту</p>
+        </div>
+        <div class="card why-item reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg></div>
+          <h3>Без прив'язки</h3>
+          <p>Повний доступ до коду й сервера, без підписок і прив'язки до мене</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== AI-АГЕНТИ ===== -->
-  <section id="agents">
+  <section id="agents" class="section-alt">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">AI-агенти</span>
@@ -99,42 +142,21 @@
         <p>Розуміють звичайну мову, а не лише кнопки. Збирають дані, записують і сповіщають власника.</p>
       </div>
       <div class="grid-3">
-        <article class="card project reveal">
-          <div class="project-top"><h3>Save Tooth</h3><span class="badge">Стоматологія</span></div>
-          <p>Агент приймає звернення пацієнтів і записує їх на прийом.</p>
-          <ul>
-            <li>Консультує по послугах і цінах</li>
-            <li>Заявки одразу в Google Sheets</li>
-            <li>Сповіщення адміну в Telegram</li>
-          </ul>
-          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span><span class="tag">Google Sheets</span></div>
-        </article>
-        <article class="card project reveal">
-          <div class="project-top"><h3>Флористка</h3><span class="badge">Квітковий магазин</span></div>
-          <p>Чат-менеджер, що допомагає підібрати букет і оформити замовлення.</p>
-          <ul>
-            <li>Підбір букета під привід і бюджет</li>
-            <li>Збирає адресу і час доставки</li>
-            <li>Передає готове замовлення флористу</li>
-          </ul>
-          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span></div>
-        </article>
-        <article class="card project reveal">
-          <div class="project-top"><h3>НутріБот</h3><span class="badge">Здоров'я</span></div>
-          <p>Персональний агент з харчування з планом на день і тиждень.</p>
-          <ul>
-            <li>Опитування і розрахунок калорій</li>
-            <li>План їжі та список продуктів</li>
-            <li>Щоденні нагадування</li>
-          </ul>
-          <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span><span class="tag">Планувальник</span></div>
-        </article>
+        <!--
+          Шаблон картки агента — скопіюй і заповни:
+          <article class="card project reveal">
+            <div class="project-top"><h3>Назва</h3><span class="badge">Ніша</span></div>
+            <p>Короткий опис.</p>
+            <ul><li>Що вміє 1</li><li>Що вміє 2</li><li>Що вміє 3</li></ul>
+            <div class="tags"><span class="tag">Claude API</span><span class="tag">Telegram</span></div>
+          </article>
+        -->
       </div>
     </div>
   </section>
 
   <!-- ===== ІНТЕГРАЦІЇ API ===== -->
-  <section id="api" class="section-alt">
+  <section id="api">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Інтеграції API</span>
@@ -166,36 +188,13 @@
       </div>
 
       <div class="grid-2">
-        <article class="card project reveal">
-          <div class="project-top"><h3>Оплата підписки через Monobank</h3><span class="badge">Платежі</span></div>
-          <p>Бот приймає оплату за доступ до приватного чату і сам видає доступ.</p>
-          <ul><li>Тарифи і промокоди</li><li>Перевірка оплати на банку</li><li>Адмін-панель у Telegram</li></ul>
-          <div class="tags"><span class="tag">Monobank API</span><span class="tag">Telegram</span></div>
-        </article>
-        <article class="card project reveal">
-          <div class="project-top"><h3>Спред-монітор бірж</h3><span class="badge">Крипто</span></div>
-          <p>Порівнює ціни між біржами і сигналить, коли розрив перевищує поріг.</p>
-          <ul><li>BingX, Binance, Bybit</li><li>Сигнали в Telegram за секунди</li><li>Лог усіх подій у CSV</li></ul>
-          <div class="tags"><span class="tag">REST / WebSocket</span><span class="tag">Python</span></div>
-        </article>
-        <article class="card project reveal">
-          <div class="project-top"><h3>Моніторинг цін у магазинах</h3><span class="badge">Парсинг</span></div>
-          <p>Стежить за цінами на товари в кількох магазинах і повідомляє про знижки.</p>
-          <ul><li>Зіставлення однакових моделей</li><li>Історія цін у таблиці</li><li>Сповіщення про падіння ціни</li></ul>
-          <div class="tags"><span class="tag">Парсер</span><span class="tag">Telegram</span><span class="tag">CSV</span></div>
-        </article>
-        <article class="card project reveal">
-          <div class="project-top"><h3>Моніторинг сервера</h3><span class="badge">DevOps</span></div>
-          <p>Бот стежить за станом сервера і скриптів, перезапускає їх при збоях.</p>
-          <ul><li>Стан, пам'ять, місце на диску</li><li>Перезапуск з кнопки</li><li>Щоденний звіт</li></ul>
-          <div class="tags"><span class="tag">Linux</span><span class="tag">Telegram</span></div>
-        </article>
+        <!-- Сюди додавай картки інтеграцій (той самий шаблон, що й у агентів) -->
       </div>
     </div>
   </section>
 
   <!-- ===== ЯК Я ПРАЦЮЮ ===== -->
-  <section>
+  <section class="section-alt">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Процес</span>
@@ -210,8 +209,8 @@
     </div>
   </section>
 
-  <!-- ===== КОНТАКТИ ===== -->
-  <section id="contact" style="padding-top: 0;">
+  <!-- ===== CTA ===== -->
+  <section>
     <div class="container">
       <div class="cta reveal">
         <div>
@@ -229,7 +228,7 @@
 
 <footer>
   <div class="container footer-inner">
-    <span>© <span data-year></span> ssanqk</span>
+    <span>© <span data-year></span> Михайло</span>
     <span>AI-агенти · Інтеграції API · Сайти</span>
   </div>
 </footer>

@@ -6,6 +6,20 @@ if (burger) {
   nav.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 }
 
+// Перемикач світлої / темної теми (вибір запам'ятовується)
+const themeBtn = document.querySelector('.theme-toggle');
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    const root = document.documentElement;
+    const isDark = root.dataset.theme
+      ? root.dataset.theme === 'dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const next = isDark ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+}
+
 // Рік у футері
 document.querySelectorAll('[data-year]').forEach(el => (el.textContent = new Date().getFullYear()));
 
@@ -54,17 +68,3 @@ async function playChat() {
   }
 }
 playChat();
-
-// ===== Фільтр на сторінці сайтів =====
-const filter = document.querySelector('.filter');
-if (filter) {
-  filter.addEventListener('click', e => {
-    const btn = e.target.closest('button');
-    if (!btn) return;
-    filter.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
-    const cat = btn.dataset.cat;
-    document.querySelectorAll('[data-cat-item]').forEach(card => {
-      card.style.display = cat === 'all' || card.dataset.catItem === cat ? '' : 'none';
-    });
-  });
-}
