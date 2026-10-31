@@ -242,7 +242,10 @@ h3 { font-size: 1.1rem; font-weight: 650; }
   padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px;
 }
 .cta p { opacity: .85; margin-top: 8px; max-width: 480px; }
-.cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.cta-links { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.cta-arrow { display: inline-flex; color: #fff; margin-right: 4px; animation: nudge 1.4s ease-in-out infinite; }
+.cta-arrow svg { width: 44px; height: 22px; }
+@keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
 .cta .btn { background: #fff; color: #1e3a8a; }
 .cta .btn.btn-outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .5); }
 
