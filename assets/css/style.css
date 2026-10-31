@@ -132,35 +132,46 @@ h3 { font-size: 1.1rem; font-weight: 650; }
 .hero-stats b { display: block; font-size: 1.5rem; font-weight: 800; }
 .hero-stats span { font-size: .85rem; color: var(--muted); }
 
-/* ===== Чат-демо агента ===== */
-.chat {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
-  box-shadow: var(--shadow); overflow: hidden; max-width: 420px; margin-left: auto; width: 100%;
+/* ===== Ілюстрація в hero (постпанк-постер) ===== */
+.hero-art {
+  max-width: 440px; width: 100%; margin-left: auto;
+  border-radius: 18px; overflow: hidden; box-shadow: var(--shadow);
+  border: 1px solid var(--border); background: #131317;
 }
-.chat-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border); }
-.chat-avatar {
-  width: 38px; height: 38px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
-  display: grid; place-items: center; font-weight: 700;
+.hero-art svg { display: block; width: 100%; height: auto; }
+.hero-art svg * { transform-box: view-box; }
+
+/* Голова качається в ритм */
+.art-head { transform-origin: 205px 150px; animation: bob 1.1s ease-in-out infinite; }
+@keyframes bob { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(3deg); } }
+
+/* Нога час від часу чухає іншу ногу */
+.art-leg { transform-origin: 248px 250px; animation: scratch 8s ease-in-out infinite; }
+@keyframes scratch {
+  0%, 58%   { transform: rotate(0deg); }
+  62%       { transform: rotate(14deg); }
+  65%       { transform: rotate(9deg); }
+  68%       { transform: rotate(15deg); }
+  71%       { transform: rotate(9deg); }
+  74%       { transform: rotate(15deg); }
+  77%       { transform: rotate(9deg); }
+  82%, 100% { transform: rotate(0deg); }
 }
-.chat-head b { display: block; font-size: .95rem; }
-.chat-head small { color: var(--ok); font-size: .8rem; }
-.chat-body { padding: 18px; height: 330px; display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
-.msg {
-  max-width: 82%; padding: 10px 14px; border-radius: 14px; font-size: .92rem; line-height: 1.45;
-  animation: pop .3s ease both;
+
+/* Ноти вилітають з навушників */
+.art-note { opacity: 0; animation: note 3s ease-out infinite; }
+.art-note.n2 { animation-delay: 1.5s; }
+@keyframes note {
+  0%   { opacity: 0; transform: translate(0, 0); }
+  20%  { opacity: .9; }
+  100% { opacity: 0; transform: translate(-22px, -40px); }
 }
-.msg.bot { background: var(--surface-2); border-bottom-left-radius: 4px; }
-.msg.user { background: var(--accent); color: var(--accent-text); margin-left: auto; border-bottom-right-radius: 4px; }
-.msg.system {
-  align-self: center; max-width: 100%; font-size: .78rem; color: var(--ok);
-  background: transparent; border: 1px dashed var(--ok); border-radius: 999px; padding: 4px 12px;
-}
-.typing { display: inline-flex; gap: 4px; padding: 14px; }
-.typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite; }
-.typing i:nth-child(2) { animation-delay: .15s; }
-.typing i:nth-child(3) { animation-delay: .3s; }
-@keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-@keyframes blink { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+
+/* Пара над чашкою і мерехтіння монітора */
+.art-steam { animation: steam 2.4s ease-in-out infinite; }
+@keyframes steam { 0%, 100% { opacity: .15; transform: translateY(2px); } 50% { opacity: .6; transform: translateY(-3px); } }
+.art-glow { animation: flicker 4s steps(1) infinite; }
+@keyframes flicker { 0%, 100% { opacity: 1; } 47% { opacity: .75; } 49% { opacity: 1; } 83% { opacity: .85; } }
 
 /* ===== Картки ===== */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -287,7 +298,7 @@ footer { padding: 32px 0; color: var(--muted); font-size: .88rem; border-top: 1p
 /* ===== Адаптив ===== */
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .chat { margin: 0 auto; }
+  .hero-art { margin: 0 auto; }
   .grid-3, .steps, .includes, .why-grid { grid-template-columns: repeat(2, 1fr); }
   .cta { flex-direction: column; align-items: flex-start; }
 }
