@@ -300,6 +300,7 @@ footer { padding: 32px 0; color: var(--muted); font-size: .88rem; border-top: 1p
   display: grid; grid-template-columns: 340px 1fr; gap: 40px; align-items: start;
   background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px;
 }
+.demo + .demo { margin-top: 28px; }
 .demo-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .demo-lead { color: var(--muted); margin: 12px 0 22px; }
 .demo-info h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin-bottom: 10px; }
